@@ -19,7 +19,7 @@ def contact():
 
 @app.route("/hello/")
 @app.route("/hello/<name>")
-def hello_there(name):
+def hello_there(name = None):
     return render_template(
         "hello_there.html",
         name=name,
